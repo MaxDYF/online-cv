@@ -1,0 +1,30 @@
+{% assign competitions = resume.competitions %}
+{% if competitions %}
+<section class="section competitions-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ competitions.title }}
+  </h2>
+
+  {% for competition in competitions.info %}
+  <div class="item">
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="job-title">{{ competition.name }}</h3>
+        <div class="time">{{ competition.time }}</div>
+      </div>
+    </div>
+
+    {% if competition.details %}
+    <div class="details">
+      {{ competition.details | markdownify }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

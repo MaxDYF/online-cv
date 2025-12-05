@@ -1,0 +1,111 @@
+#
+# 中文版简历数据
+#
+
+sidebar:
+  position: left
+  about: False
+  education: True
+
+  # 个人信息
+  name: 邓逸飞
+  tagline: 
+  avatar: profile.png
+
+  # 侧边栏链接
+  email: dengyf@mails.neu.edu.cn
+  timezone: Asia/Shanghai
+  citizenship: 广东省，韶关市
+  website: 
+  linkedin: 
+  xing: 
+  github: maxdyf
+  telegram: 
+  gitlab:
+  bitbucket:
+  bluesky: 
+  twitter: 
+  stack-overflow: 
+  codewars:
+  goodreads: 
+  mastodon: 
+  hackerrank: 
+  leetcode: 
+  pdf: 
+
+# career-profile:
+#   title: 概览
+#   summary: |
+#     我是东北大学秦皇岛分校 2023 级计算机科学与技术专业的本科生。
+education:
+  title: 教育背景
+  info:
+  - degree: 计算机科学与技术，本科
+    university: 东北大学秦皇岛分校
+    time: 2023 - 至今
+    details: |
+      主修课程：数据结构 (99)、高等数学 (99)、C++程序设计 (97)、Java程序设计 (97)、算法设计与分析 (94)、概率论与数理统计 (94)
+
+grade:
+  title: 成绩与荣誉
+  items:
+  - label: GPA
+    details: 3.85/5， 均分 88.5，排名 33/196 (16%)
+  - label: 英语水平
+    details: CET-4 586, CET-6 455
+  - label: 奖学金
+    details: 校级二等奖学金（2023, 2024）
+
+competitions:
+  title: 竞赛经历
+  info:
+  - name: ICPC Asia East（成都站）
+    time: 2025
+    details: |
+      银奖
+  - name: ICPC Asia East（沈阳站）
+    time: 2024
+    details: |
+      银奖
+  - name: ICPC Asia East（南京站）
+    time: 2024
+    details: |
+      银奖
+  - name: ICPC Asia East Continent Final
+    time: 2024
+    details: |
+      铜奖
+  - name: 2025 中国机器人大赛暨RoboCup机器人世界杯中国赛
+    time: 2025
+    details: |
+      智源具身大模型挑战赛，季军，二等奖
+  - name: 2024 RAICOM 机器人开发者大赛
+    time: 2024
+    details: |
+      CAIP 编程组一等奖
+  - name: 蓝桥杯程序设计大赛
+    time: 2024
+    details: |
+      C++ A 组国家级二等奖
+    
+experiences:
+  title: 实践经验
+  info:
+  - role: 副会长
+    time: 2024 - 2025
+    company: NEUQ-ACM 俱乐部
+    details: |
+      负责算法训练营规划，参与组织校级算法编程竞赛”图灵杯”。
+
+publications:
+  title: 出版物
+  intro: |
+    主要研究方向为 LLM 与具身智能。
+  papers:
+  - title: 计算机程序设计艺术
+    link: "#"
+    authors: Donald E. Knuth
+    conference: Addison-Wesley, 1968
+
+footer: >
+  由 <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a> 设计，感谢原作者的开源分享。

@@ -1,14 +1,14 @@
 ---
 layout: default
-lang: en
-data_source: data
-alternate_url: /zh/
-alternate_label: 中文
+lang: zh
+data_source: data_zh
+permalink: /zh/
+alternate_url: /
+alternate_label: English
 ---
 
 {% assign data_source = page.data_source | default: 'data' %}
 {% assign resume = site.data[data_source] %}
-
 
 {% include career-profile.html %}
 

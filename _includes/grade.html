@@ -1,0 +1,26 @@
+{% assign grade = resume.grade %}
+{% if grade %}
+<section class="section grade-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ grade.title }}
+  </h2>
+
+  <div class="item">
+    <ul class="list-unstyled grade-list">
+      {% for item in grade.items %}
+      <li>
+        {% if item.label %}
+        <strong class="grade-label">{{ item.label }}:</strong>
+        {% endif %}
+        <span class="grade-details">{{ item.details }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</section>
+{% endif %}

@@ -5,10 +5,18 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="{{ page.lang | default: 'en' }}"> <!--<![endif]-->
+{% assign data_source = page.data_source | default: 'data' %}
+{% assign resume = site.data[data_source] %}
 {% include head.html %}
 
 <body>
+  {% if page.alternate_url %}
+  <button onclick="window.location.href='{{ page.alternate_url | relative_url }}'" class="lang-toggle-button d-print-none">
+    <i class="fas fa-language"></i>{{ page.alternate_label | default: '中文' }}
+  </button>
+  {% endif %}
+
   <button onclick="print()" class="print-button d-print-none">
     <i class="fas fa-file-pdf"></i>Print
   </button>

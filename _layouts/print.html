@@ -6,8 +6,10 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
   <!--<![endif]-->
+  {% assign data_source = page.data_source | default: 'data' %}
+  {% assign resume = site.data[data_source] %}
   {% include head.html %}
   <style>
     body {

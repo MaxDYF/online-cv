@@ -3,12 +3,17 @@ layout: print
 permalink: /print
 ---
 
+{% assign data_source = page.data_source | default: 'data' %}
+{% assign resume = site.data[data_source] %}
+
 
 {% include career-profile.html %}
 
-{% unless site.data.data.sidebar.education %}
+{% unless resume.sidebar.education %}
   {% include education.html %}
 {% endunless %}
+
+{% include grade.html %}
 
 {% include experiences.html %}
 
